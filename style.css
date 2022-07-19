@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common-css start */
+.container {
+    width: 80em;
+    margin: auto;
+}
+
+.same-btn {
+    background: #e02c6d;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 25px;
+}
+
+.d-none {
+    display: none;
+}
+
+
+/* header-start */
+#header {
+    margin-top: 50px;
+}
+
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.header-right span a {
+    margin: 0 15px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* header-ends */
+/* influencer-area-start */
+.influencer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 83vh;
+}
+
+
+.influencer-text {
+    width: 40%;
+}
+
+.influencer-text h1 {
+    color: #3A3A3A;
+    font-size: 50px;
+}
+
+.influencer-text p {
+    color: #3A3A3A;
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+.same-btn:hover .fa-arrow-right-long {
+    position: relative;
+    left: 20px;
+}
+
+.same-btn .fa-arrow-right-long {
+    margin-left: 10px;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.influencer-img {
+    border-radius: 50%;
+    padding: 45px;
+    width: 40%;
+}
+
+.influencer-img img {
+    width: 100%;
+}
+
+/* influencer-area-ends */
+/* company-logo-start */
+.company-logo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 2px solid blanchedalmond;
+    align-items: center;
+    margin: 0px 100px 80px 100px;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+
+/* company-logo-ends */
+/* popular-star */
+.populars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px 125px;
+    grid-row-gap: 30px;
+    grid-column-gap: 12px;
+}
+
+.popular-content {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(219, 213, 213);
+    /* width: 325px; */
+}
+
+.popular-content img {
+    width: 100%;
+    height: 60%;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+    font-size: 12px;
+    color: goldenrod;
+}
+
+.popular-btn {
+    margin-top: 30px;
+    text-align: right;
+    margin-right: 105px;
+}
+
+.popular-btn a {
+    color: #e02c6d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* popular-ends */
+
+/* features-start */
+.features {
+    display: flex;
+    gap: 60px;
+    padding: 0 100px;
+    align-items: center;
+    margin: 50px 0px;
+    justify-content: center;
+}
+
+
+
+.feature-text h1 {
+    /* padding: 15px 0; */
+    padding-bottom: 25px;
+}
+
+.feature-text p {
+    padding-bottom: 22px;
+    line-height: 23px;
+}
+
+
+/* features-ends */
+
+
+
+
+
+
+
+
+/* footer-start */
+footer {
+    width: 100%;
+    text-align: center;
+    background: #0a0826;
+    padding: 50px 0;
+    color: white;
+}
+
+footer h2 {
+    padding-bottom: 10px;
+
+}
+
+footer p {
+    padding-bottom: 15px;
+    color: antiquewhite;
+    line-height: 22px;
+}
+
+footer i {
+    color: bisque;
+    padding: 0 8px;
+}
+
+/* footer-ends */
+
+
+/* media query resposive */
+
+/* mobile-device */
+@media only screen and (max-width:555px) {
+
+
+    .container {
+        width: 100%;
+
+    }
+
+    .header-area {
+
+        margin: 0 10px;
+    }
+
+    #header {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .header-left {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .d-none {
+        display: inline-block;
+    }
+
+    .influencer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .influencer-img {
+
+        padding: 0px;
+    }
+
+    .influencer-text {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .influencer-text h1 {
+        font-size: 30px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+
+    .company-logo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .company-logo {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px 0;
+        grid-row-gap: 15px;
+    }
+
+
+    .populars {
+        grid-template-columns: 1fr;
+        margin: 0;
+        grid-row-gap: 15px;
+        grid-column-gap: 0px;
+    }
+
+    .popular-content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+
+
+}
+
+@media only screen and (min-width: 556px) and (max-width:992px) {
+
+
+    .container {
+        width: 100%;
+
+    }
+
+    .header-area {
+
+        margin: 0 10px;
+    }
+
+    #header {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .header-left {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .d-none {
+        display: inline-block;
+    }
+
+    .influencer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .influencer-img {
+
+        padding: 0px;
+    }
+
+    .influencer-text {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .influencer-text h1 {
+        font-size: 30px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+
+
+
+    .company-logo {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 20px 0;
+        grid-row-gap: 15px;
+    }
+
+
+    .populars {
+        grid-template-columns: 1fr;
+        margin: 0;
+        grid-row-gap: 15px;
+        grid-column-gap: 0px;
+    }
+
+    .popular-content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+
+    .influencer {
+        justify-content: space-around;
+    }
+
+
+    .populars {
+        margin: 0;
+    }
+
+    .popular-content {
+        width: 100%;
+        margin: 0;
+    }
+}
